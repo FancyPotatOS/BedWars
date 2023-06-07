@@ -1,0 +1,7 @@
+
+# Item cannot be picked up, doesn't fall, and doesn't disappear for 8 minutes
+summon item ~ ~ ~ {NoGravity:1b,PickupDelay:1000000,Age:-10000,Item:{id:"minecraft:diamond_block",Count:1b}}
+
+# Diamond generator
+summon marker ~ ~ ~ {Tags:[bedwars.generator.diamond]}
+kill @e[type=marker,tag=bedwars.generator.diamond]
